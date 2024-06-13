@@ -37,7 +37,7 @@ namespace BlazorScheduler.Internal.Components
 			if (_drag)
 				return;
 
-			Appointment.OnClick?.Invoke();
+			Appointment.OnClick?.Invoke(Appointment);
 		}
 
 		private void OnMouseMove(MouseEventArgs e)

@@ -11,7 +11,7 @@
     <Appointments>
         @foreach (var app in _appointments)
         {
-            <Appointment Start="@app.Start" End="@app.End" Color="@app.Color" OnClick="() => OnAppointmentClicked(app)" OnReschedule="(start, end) => HandleReschedule(app, start, end)">
+            <Appointment Start="@app.Start" End="@app.End" Color="@app.Color" OnClick="(x) => OnAppointmentClicked(app)" OnReschedule="(start, end) => HandleReschedule(app, start, end)">
                 @app.Title
             </Appointment>
         }
